@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: test
+  datasource:
+    url: jdbc:mysql://localhost:3306/livrotest?createDatabaseIfNotExist=true
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+  jackson:
+    default-property-inclusion: non_null
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+jwt:
+  secret: efb20107-a617-411b-bdb3-c6adddb680e7
+  expiration: 999999
